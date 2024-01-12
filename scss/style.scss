@@ -1,0 +1,143 @@
+@import "Utilities/variables"
+@import "Utilities/mixin"
+@import "Utilities/extend"
+
+.index  {
+    @extend %estilo-general;
+
+    h1 {
+        background-color: $color-secundario;
+        color: $color-principal;
+        display: flex;
+        justify-content: center;        
+        font-size: 55px;
+    }
+ 
+    .titulo1 {
+        display: flex;
+        justify-content: center;      
+        font-size: 22px;
+    }
+    
+    
+    footer {
+        @include footer-flex
+    }
+}
+
+/* estilos del html de Propuestas */
+.Propuestas {
+    @extend %estilo-general;
+    
+    h1 {
+        display: flex;
+        justify-content: center
+    }
+    
+    footer {
+        @include footer-flex
+    }
+
+// media query mobile 
+
+@media only screen and (max-width:470px) {
+
+/* grid propuestas */
+    .grid-item-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr ;
+        row-gap: 10px;
+        column-gap: 10px;
+        padding: 5px;
+        }
+    }
+
+// media query desktop 
+
+@media only screen and (min-width: 471px) {
+
+/* grid propuestas */
+    .grid-item-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        padding: 5px;
+        }
+    }
+}
+
+
+/* estilos del html de somos */
+.Somos {
+    @extend %estilo-general;
+
+    h1  {
+        display: flex;
+        justify-content: center;
+        }
+
+    main  {
+        display: flex;
+        justify-content: center;    
+        flex-wrap: wrap;
+        }  
+
+    
+    footer {
+        @include footer-flex
+           }
+}
+
+/* estilos del html de contacto */
+.contacto {
+    @extend %estilo-general;
+
+    h1  {
+        display: flex;
+        justify-content: center;
+        }
+
+    main ul li {
+        display: flex;
+        justify-content: center;    
+        flex-wrap: wrap;
+        }  
+
+    
+    footer {
+        @include footer-flex
+           }
+}
+
+
+/* estilos del html de fotos */
+.Fotos {
+    @extend %estilo-general;
+
+    header h1 {
+        display: flex;
+        justify-content: center
+              }
+    
+    footer {
+        @include footer-flex
+           }
+        
+    /* grid galeria de fotos */ 
+    .grid-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        padding: 5px;
+    }
+
+    .grid-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
