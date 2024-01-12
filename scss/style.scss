@@ -1,6 +1,6 @@
-@import "Utilities/variables"
-@import "Utilities/mixin"
-@import "Utilities/extend"
+@import "Utilities/variables";
+@import "Utilities/mixin";
+@import "Utilities/extend";
 
 .index  {
     @extend %estilo-general;
@@ -21,7 +21,7 @@
     
     
     footer {
-        @include footer-flex
+        @include footer-flex;
     }
 }
 
@@ -31,11 +31,11 @@
     
     h1 {
         display: flex;
-        justify-content: center
+        justify-content: center;
     }
     
     footer {
-        @include footer-flex
+        @include footer-flex;
     }
 
 // media query mobile 
@@ -87,7 +87,7 @@
 
     
     footer {
-        @include footer-flex
+        @include footer-flex;
            }
 }
 
@@ -108,7 +108,7 @@
 
     
     footer {
-        @include footer-flex
+        @include footer-flex;
            }
 }
 
@@ -119,11 +119,11 @@
 
     header h1 {
         display: flex;
-        justify-content: center
+        justify-content: center;
               }
     
     footer {
-        @include footer-flex
+        @include footer-flex;
            }
         
     /* grid galeria de fotos */ 
