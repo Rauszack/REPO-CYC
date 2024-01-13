@@ -55,8 +55,7 @@
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
       row-gap: 10px;
-      column-gap: 10px;
-      padding: 5px; } }
+      column-gap: 10px; } }
 
 .Propuestas .grid-item img, .Propuestas p {
   display: flex;
