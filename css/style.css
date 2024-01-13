@@ -1,114 +1,128 @@
-.index, .Propuestas, .Somos, .contacto, .Fotos {
+.Fotos, .contacto, .Somos, .propuestas, .index {
   background-color: #D6EAEB;
   color: #218688;
   font-size: 18px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
 .index h1 {
   background-color: #D6EAEB;
   color: #218688;
   display: flex;
   justify-content: center;
-  font-size: 55px; }
-
+  font-size: 55px;
+}
 .index .titulo1 {
   display: flex;
   justify-content: center;
-  font-size: 22px; }
-
+  font-size: 22px;
+}
 .index footer {
   display: flex;
   margin-top: 50px;
-  justify-content: space-evenly; }
+  justify-content: space-around;
+  align-items: center;
+}
 
 /* estilos del html de Propuestas */
-.Propuestas h1 {
-  display: flex;
-  justify-content: center; }
-
-.Propuestas footer {
+.propuestas footer {
   display: flex;
   margin-top: 50px;
-  justify-content: space-evenly; }
-
-@media only screen and (max-width: 470px) {
-  .Propuestas {
-    /* grid propuestas */ }
-    .Propuestas .grid-item-container {
-      display: flex;
-      align-items: center;
-      display: grid;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-columns: 1fr;
-      row-gap: 20px;
-      column-gap: 10px;
-      padding: 5px;
-      border: 20px;
-      margin: 30px; } }
-
-@media only screen and (min-width: 471px) {
-  .Propuestas {
-    /* grid propuestas */ }
-    .Propuestas .grid-item-container {
-      align-items: center;
-      display: grid;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      row-gap: 10px;
-      column-gap: 10px; } }
-
-.Propuestas .grid-item img, .Propuestas p {
+  justify-content: space-around;
+  align-items: center;
+}
+.propuestas .grid-item img {
   display: flex;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 /* estilos del html de somos */
 .Somos h1 {
   display: flex;
-  justify-content: center; }
-
+  justify-content: center;
+}
 .Somos main {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
-
+  flex-wrap: wrap;
+}
 .Somos footer {
   display: flex;
   margin-top: 50px;
-  justify-content: space-evenly; }
+  justify-content: space-around;
+  align-items: center;
+}
 
 /* estilos del html de contacto */
 .contacto h1 {
   display: flex;
-  justify-content: center; }
-
+  justify-content: center;
+}
 .contacto main ul li {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
-
+  flex-wrap: wrap;
+}
 .contacto footer {
   display: flex;
   margin-top: 50px;
-  justify-content: space-evenly; }
+  justify-content: space-around;
+  align-items: center;
+}
 
 /* estilos del html de fotos */
 .Fotos {
-  /* grid galeria de fotos */ }
-  .Fotos header h1 {
+  /* grid galeria de fotos */
+}
+.Fotos header h1 {
+  display: flex;
+  justify-content: center;
+}
+.Fotos footer {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+.Fotos .grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 5px;
+}
+.Fotos .grid-img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 470px) {
+  /* grid propuestas */
+  .grid-item-container {
     display: flex;
-    justify-content: center; }
-  .Fotos footer {
-    display: flex;
-    margin-top: 50px;
-    justify-content: space-evenly; }
-  .Fotos .grid-container {
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+    padding: 5px;
+    border: 20px;
+    margin: 30px;
+  }
+}
+@media only screen and (min-width: 471px) {
+  /* grid propuestas */
+  .grid-item-container {
+    align-items: center;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 10px;
     column-gap: 10px;
-    padding: 5px; }
-  .Fotos .grid-img img {
-    width: 100%;
-    height: 100%; }
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
